@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Margarine&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Margarine', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding-top: 5rem;
+    width: 50%;
+    /* height: 80vh; */
+    gap: 2rem;
+    margin: 10vh auto;
+    border-radius: 5px;
+    border: 1px solid rgb(177, 177, 177);
+    box-shadow: 0 0 20px 1px rgba(150, 150, 150, 0.804);
+    background-color: rgb(107, 206, 255);
+}
+
+.container .top {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container .top h1 {
+    font-size: 70px;
+}
+
+.container .top input {
+    width: 30vw;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: bisque;
+}
+
+.container .top input::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.container .top button.btn1 {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: bisque;
+    color: black;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+
+.container .top button.btn1:hover {
+    background-color: black;
+    color: white;
+}
+
+.container .list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.container .lists {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    height: 45px;
+    border-radius: 5px;
+    border: 1px solid rgb(177, 177, 177);
+    color: white;
+    align-items: center;
+    padding: 10px 10px;
+    margin: 5px 0;
+}
+
+.container .lists ul li {
+    list-style: none;
+}
+
+.container .lists button.edit,
+.container .lists button.delete {
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: bisque;
+    color: black;
+    transition: 0.4s;
+    cursor: pointer;
+
+}
+
+.container .lists button.edit:hover,
+.container .lists button.delete:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+@media  screen and (max-width:1025px) {
+    .container {
+        width: 90%;
+        height: 100%;
+        margin: 10vh auto;
+    }
+
+    .container .top h1{
+        font-size: 100px;
+    }
+    .container .top input {
+        width: 75vw;
+        font-size: 25px;
+    }
+
+    .container .top button.btn1{
+        font-size: 25px;
+    }
+    
+}
+@media  screen and (max-width:431px) {
+    .container {
+        width: 90%;
+        height: 100%;
+        margin: 10vh auto;
+    }
+    .container .top h1{
+        font-size: 50px;
+    }
+    .container .top input {
+        width: 75vw;
+    }
+    
+}
